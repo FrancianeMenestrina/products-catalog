@@ -6,7 +6,7 @@ import { useCart } from "../lib/CartContext";
 const ShowProductInfo = ({ product }) => {
   const cart = useCart();
   const addToCart = () => {
-    cart.addToCart(product);
+    cart.addToCart(product, 1);
   };
   return (
     <div className="flex">

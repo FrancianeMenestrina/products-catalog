@@ -18,16 +18,17 @@ export const CartProvider = ({ children }) => {
     cartSize = Object.keys(cart).length;
   }
 
-  const addToCart = (product) => {
+  const addToCart = (product, qty) => {
+    let currentProduct = product;
     setCart((oldCart) => {
-      let qty = 1;
       if (oldCart[product.slug]) {
-        qty = oldCart[product.slug].qty + 1;
+        qty = oldCart[product.slug].qty + qty;
+        currentProduct = oldCart[product.slug];
       }
-      product.qty = qty;
+      currentProduct.qty = qty;
       const newCart = {
         ...oldCart,
-        [product.slug]: product,
+        [product.slug]: currentProduct,
       };
       localStorage.setItem("cart", JSON.stringify(newCart));
       return newCart;
