@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="p-6 text-center bg-gray-100">
+    <div className="p-6 text-center text-white  bg-gray-500">
       Catálogo de Produtos = PowerSites DevPleno
     </div>
   );

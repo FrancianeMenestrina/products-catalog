@@ -4,7 +4,7 @@ import Footer from "../Footer";
 
 const Layout = ({ children }) => {
   return (
-    <div>
+    <div className="gradient">
       <Header />
       <div className="min-h-screen container mx-auto">{children}</div>
       <Footer />

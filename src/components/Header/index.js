@@ -21,7 +21,7 @@ const Header = () => {
 
   // return <pre>{JSON.stringify(categories, null, 2)}</pre>;
   return (
-    <nav class="bg-blue-400">
+    <nav class="bg-gray-500">
       <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-16 items-center justify-between">
           <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
@@ -31,8 +31,6 @@ const Header = () => {
               aria-controls="mobile-menu"
               aria-expanded="false"
             >
-              <span class="sr-only">Open main menu</span>
-
               <svg
                 class="block h-6 w-6"
                 fill="none"
@@ -65,13 +63,7 @@ const Header = () => {
             </button>
           </div>
           <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-            <div class="flex flex-shrink-0 items-center">
-              <img
-                class="h-8 w-auto"
-                src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                alt="Your Company"
-              />
-            </div>
+            <div class="flex flex-shrink-0 items-center"></div>
             <div class="hidden sm:ml-6 sm:block">
               <div class="flex space-x-4">
                 <Link
